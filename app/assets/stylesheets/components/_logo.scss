@@ -1,0 +1,9 @@
+.logo {
+  background-image: asset-url('logo.png');
+  // PATH HELPER
+  //generate the path to the logo image for me
+  // background-image: asset-path('logo.png');
+  background-size: cover;
+  height: 100px;
+  width: 250px;
+}

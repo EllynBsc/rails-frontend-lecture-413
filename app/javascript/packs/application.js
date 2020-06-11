@@ -15,3 +15,22 @@ require("channels")
 //
 // const images = require.context('../images', true)
 // const imagePath = (name) => images(name, true)
+console.log("Hello from app/javascript/packs/application.js!");
+
+// IMPORT ALL THE FUNCTION FILES
+// INVOKE ALL THE FUNCTIONS
+// EXECUTE EVENT LISTENERS
+import 'bootstrap';
+
+import { initUpdateNavbarOnScroll } from "../components/navbar";
+import { loadDynamicBannerText  } from '../components/banner'
+
+// turbolinks:load is equivalent of the event type domLoaded
+document.addEventListener('turbolinks:load', () => {
+  // Call your JS functions here
+  initUpdateNavbarOnScroll();
+  loadDynamicBannerText();
+});
+
+
+
